@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Netflix sans';
+    src: url('fonts/NetflixSansRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Netflix sans';
+    text-align: center;
+    font-size: 44px;
+    font-weight: 100;
+    color:white;
+}
+
+span {
+    font-family: 'Netflix sans';
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+    color:#b1b1b1;
+}
+
+.logo {
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+div.selecionar-perfis {
+    text-align: center;
+    font-family: 'Netflix sans';
+}
+
+div.perfis {
+    width: 150px;
+    display: inline-block;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.89);
+}
+
+img.especial {
+    border-radius: 9%;
+    padding: 10px 10px 10px 10px;
+}
+
+div:hover > span {
+    color: rgb(255, 255, 255);
+}
+
+div:hover > img.especial {
+    border: 3px solid white;
+    padding: 0px;
+    border-radius: 0%;
+}
+
