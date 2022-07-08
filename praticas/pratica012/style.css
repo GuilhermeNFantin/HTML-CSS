@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
 @media only screen and (max-width: 1500px) {
-    p{
+    section{
         font-size: 20px;
     }
 
@@ -17,7 +17,7 @@
 
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-    p{
+    section{
         font-size: 16px;
     }
 
@@ -26,7 +26,7 @@
     }
 }
 @media only screen and (max-width: 767px) {
-    p{
+    section{
         font-size: 16px;
     }
 
@@ -35,8 +35,8 @@
     }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-    p{
-        font-size: 11px;
+    section{
+        font-size: 12px;
     }
 
     h1{
@@ -44,8 +44,8 @@
     }
 }
 @media only screen and (max-width: 479px) {
-    p{
-        font-size: 11px;
+    section{
+        font-size: 12px;
     }
 
     h1{
@@ -59,20 +59,13 @@
     margin: 0px;
     padding: 0px;
     font-size: 1em;
-    letter-spacing: 2px;
+    line-height: 25px;
 }
 
 body {
     text-align: justify;
     background-color: white;
     margin: 0px;
-}
-
-main > article {
-    padding-left: 15px;
-    padding-bottom: 15px;
-    font-family: 'Sriracha', cursive;
-    line-height: 15px;
 }
 
 header {
@@ -92,51 +85,86 @@ header > p {
     font-size: .8em;
 }
 
+main > section {
+    padding-bottom: 15px;
+    font-family: 'Sriracha', cursive;
+    line-height: 15px;
+}
+
+#centralizado {
+    text-align: center;
+}
+
 .container1 {
+    height: 230px;
     padding: 60px 0px 60px 0px;
     background-image: url("imagens/background001.jpg");
-    background-size: contain;
-    background-position: left center;
+    background-size: cover;
+    background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    position: relative;
+}
 
+.conteudo {
+    background-color: white;
+    padding: 50px 0px 50px 10px;
 }
 
 .conteudo1 {
-    padding: 0px 10px 5px 10px;
-    background-color: rgba(128, 128, 128, 0.267);
-    width: 300px;
+    padding: 30px 0px 30px 10px;
+    background-color: rgba(41, 38, 38, 0.5);
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
 }
 
-.conteudo1, .conteudo4 > p {
+.conteudo1, .conteudo4 {
     color: white;
+    line-height: 25px;
+}
+
+.conteudo {
+    line-height: 25px;
 }
 
 .container4 {
+    height: 250px;
     padding: 60px 0px 60px 0px;
     background-image: url("imagens/background002.jpg");
-    background-size: contain;
-    background-position: left center;
+    background-size: cover;
+    background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    position: relative;
+    box-shadow: inset -2px 1px 15px black;
 }
 
 .conteudo4 {
-    padding: 0px 10px 5px 10px;
-    background-color: rgba(128, 128, 128, 0.267);
-    width: 300px;
+    padding: 30px 0px 30px 10px;
+    background-color: rgba(41, 38, 38, 0.5);
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
 footer {
-    background-color: rgba(128, 128, 128, 0.267);
+    background-color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     text-decoration: none;
     text-decoration-color: none;
+    color: white;
 }
 
 a {
-    color: rgb(0, 0, 0);
+    color: rgb(211, 124, 11);
     text-decoration: none;
     font-weight: bold;
 }
