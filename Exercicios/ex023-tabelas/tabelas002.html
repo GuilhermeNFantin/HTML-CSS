@@ -9,18 +9,21 @@
       body {
         font-family: "Segoe UI", "Segoe UI Light", "Segoe UI", "Segoe UI",
           "Segoe UI";
-        background-color: #00000062;
+        background-color: #16444d;
       }
 
       h1 {
         text-align: left;
+        color: #ffffff;
       }
 
       table {
         border-collapse: collapse;
         position: relative;
         background-color: #5e5e5e93;
-        color: #ffbb00a9;
+        color: #ffffff;
+        vertical-align: middle;
+        text-align: center;
       }
 
       th {
@@ -35,10 +38,24 @@
         border-collapse: collapse;
         border-spacing: 0px;
         text-align: center;
+        font-size: 1.2em;
+      }
+      /* UTILIZADO PSEUCLASSE PARA FAZER EFEITO ZEBRADO */
+      tbody > tr:nth-child(odd) {
+        background-color: #1a3a3a;
+      }
+
+
+      .Pop {
+        width: 120px;
+      }
+
+      .Position {
+        font-weight: bold;
       }
 
       .aumento {
-        color: #fffb00af;
+        color: #5eff00af;
       }
 
       .Pais-comparavel {
@@ -64,18 +81,18 @@
         <!-- CABEÇALHO DA TABELA COM INFORMAÇÕES DE CADA COLUNA -->
       <thead>
         <tr class="="linhas">
-          <th>Posição</th>
-          <th>Unidade federativa</th>
-          <th>População (2010)</th>
-          <th>População (2021)</th>
-          <th>Crescimento</th>
-          <th>País comparável (População)</th>
+          <th scope="col" >Posição</th>
+          <th scope="col" >Unidade federativa</th>
+          <th scope="col" class="Pop" >População (2010)</th>
+          <th scope="col" class="Pop" >População (2021)</th>
+          <th scope="col" >Crescimento</th>
+          <th scope="col" >País comparável (População)</th>
         </tr>
       </thead>
       <!-- CORPO DA TABELA. TR = LINHA. TD = CONTEÚDO. -->
       <tbody>
         <tr class="linhas">
-          <td>1</td>
+          <td class="Position" >1</td>
           <!-- IMAGEM PEGA NO SITE WIKIPEDIA -->
           <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/22px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt="bandeira de são paulo"> São Paulo</td>
           <td>45 919049</td>
@@ -85,7 +102,7 @@
           <td class="Pais-comparavel" > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/22px-Flag_of_Spain.svg.png" alt="Bandeira da Espanha"> Espanha (46 439 864)</td>
         </tr>
         <tr class="linhas">
-          <td>2</td>
+          <td class="Position" >2</td>
           <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bandeira_de_Minas_Gerais.svg/20px-Bandeira_de_Minas_Gerais.svg.png" alt="bandeira de Minas Gerais"> Minas Gerais</td>
           <td>19 597 330</td>
           <td>21 411 923</td>
@@ -93,7 +110,7 @@
           <td class="Pais-comparavel" > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Sri_Lanka.svg/22px-Flag_of_Sri_Lanka.svg.png" alt="Bandeira do Sri Lanka"> Sri Lanka (20 675 000)</td>
         </tr>
         <tr class="linhas">
-          <td>3</td>
+          <td class="Position" >3</td>
           <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg/20px-Bandeira_do_estado_do_Rio_de_Janeiro.svg.png" alt="bandeira do Rio de Janeiro"> Rio de Janeiro</td>
           <td>15 989 929</td>
           <td>17 463 349</td>
@@ -101,7 +118,7 @@
           <td class="Pais-comparavel" > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Flag_of_the_United_Arab_Republic_%281958%E2%80%931971%29.svg/22px-Flag_of_the_United_Arab_Republic_%281958%E2%80%931971%29.svg.png" alt="Bandeira da Síria"> Síria (17,500,658)</td>
         </tr>
         <tr class="linhas">
-          <td>4</td>
+          <td class="Position" >4</td>
           <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bandeira_da_Bahia.svg/20px-Bandeira_da_Bahia.svg.png" alt="bandeira da Bahia"> Bahia</td>
           <td>14 016 906</td>
           <td>14 985 284</td>
@@ -109,7 +126,7 @@
           <td class="Pais-comparavel" > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Flag_of_Chad.svg/22px-Flag_of_Chad.svg.png" alt="Bandeira de Chade"> Chade (14 037 000)</td>
         </tr>
         <tr class="linhas">
-          <td>5</td>
+          <td class="Position" >5</td>
           <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Bandeira_do_Paran%C3%A1.svg/20px-Bandeira_do_Paran%C3%A1.svg.png" alt="Bandeira do Paraná"> Paraná</td>
           <td>10 444 526</td>
           <td>11 597 484</td>
@@ -117,7 +134,7 @@
           <td class="Pais-comparavel" > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Bandera_de_Bolivia_%28Estado%29.svg/22px-Bandera_de_Bolivia_%28Estado%29.svg.png" alt="Bandeira da Bolívia"> Bolívia (11 410 651)</td>
         </tr>
         <tr class="linhas">
-          <td>6</td>
+          <td class="Position" >6</td>
           <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Bandeira_do_Rio_Grande_do_Sul.svg/20px-Bandeira_do_Rio_Grande_do_Sul.svg.png" alt="Bandeira do Rio Grande do Sul"> Rio Grande do Sul</td>
           <td>10 693 929</td>
           <td>11 466 630</td>
@@ -125,7 +142,7 @@
           <td class="Pais-comparavel" > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_Belgium_%28civil%29.svg/22px-Flag_of_Belgium_%28civil%29.svg.png" alt="Bandeira da Bélgica"> Bélgica (11 250 659)</td>
         </tr>
         <tr class="linhas">
-          <td>7</td>
+          <td class="Position" >7</td>
           <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Bandeira_de_Pernambuco.svg/20px-Bandeira_de_Pernambuco.svg.png" alt="Bandeira de Pernambuco"> Pernambuco</td>
           <td>8 796 448</td>
           <td>9 674 793</td>
@@ -133,7 +150,7 @@
           <td class="Pais-comparavel" > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Flag_of_Belarus.svg/22px-Flag_of_Belarus.svg.png" alt="Bandeira da Bielorrússia"> Bielorrússia (9 485 300)</td>
         </tr>
         <tr class="linhas">
-          <td>8</td>
+          <td class="Position" >8</td>
           <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bandeira_do_Cear%C3%A1.svg/20px-Bandeira_do_Cear%C3%A1.svg.png" alt="Bandeira do Cerará"> Ceará</td>
           <td>8 452 381</td>
           <td>9 240 580</td>
@@ -141,7 +158,7 @@
           <td class="Pais-comparavel" > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_United_Arab_Emirates.svg/22px-Flag_of_the_United_Arab_Emirates.svg.png" alt="Bandeiras dos Emirados Árabes"> Emirados Árabes Unidos (9 157 000)</td>
         </tr>
         <tr class="linhas">
-          <td>9</td>
+          <td class="Position" >9</td>
           <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bandeira_do_Par%C3%A1.svg/20px-Bandeira_do_Par%C3%A1.svg.png" alt="Bandeira do Pará"> Pará</td>
           <td>7 581 051</td>
           <td>8 777 124</td>
@@ -149,13 +166,149 @@
           <td class="Pais-comparavel" > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Austria.svg/22px-Flag_of_Austria.svg.png" alt="Bandeira da Áustria"> Áustria (8 602 112)</td>
         </tr>
         <tr class="linhas">
-          <td>10</td>
+          <td class="Position">10</td>
           <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bandeira_de_Santa_Catarina.svg/20px-Bandeira_de_Santa_Catarina.svg.png" alt="Bandeira de Santa Catarina"> Santa Catarina</td>
           <td>6 248 436</td>
           <td>7 338 473</td>
           <td class="aumento">+17.44%</td>
           <td class="Pais-comparavel" > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Flag_of_Serbia.svg/22px-Flag_of_Serbia.svg.png" alt="Bandeira da Sérvia"> Sérvia (7 114 393)</td>
         </tr>
+        <tr class="linhas" >
+          <td class="Position" >11</td>
+          <td>  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_Goi%C3%A1s.svg/20px-Flag_of_Goi%C3%A1s.svg.png" alt="Bandeira de Goiás"> Goiás</td>
+          <td>6 003 788	</td>
+          <td>7 206 589	</td>
+          <td class="aumento">+20.03%	</td>
+          <td class="Pais-comparavel" >  <img src="" alt=""> Paraguai (7 003 406)</td>
+        </tr>
+        <tr class="linhas" >
+          <td class="Position" >12</td>
+          <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Bandeira_do_Maranh%C3%A3o.svg/20px-Bandeira_do_Maranh%C3%A3o.svg.png" alt="Bandeira do Maranhão"> Maranhão</td>
+          <td>6 574 789	</td>
+          <td>7 153 262	</td>
+          <td class="aumento">+8.80%</td>
+          <td class="Pais-comparavel" >  <img src="" alt=""> Paraguai (7 003 406)</td>
+        </tr>
+        <tr>
+          <td class="Position" >13</td>
+          <td> <img src="" alt=""> Amazonas</td>
+          <td>3 483 985	</td>
+          <td>4 269 995	</td>
+          <td class="aumento">+22.56%	</td>
+          <td class="Pais-comparavel" >  <img src="" alt=""> Líbano (4 168 000)</td>
+        </tr>
+        <tr class="linhas" >
+          <td class="Position" >14</td>
+          <td> <img src="" alt=""> Espírito Santo</td>
+          <td>3 514 952	</td>
+          <td>4 108 508	</td>
+          <td class="aumento">+16.89%	</td>
+          <td class="Pais-comparavel" >  <img src="" alt=""> Líbano (4 168 000)</td>
+        </tr>
+        <tr class="linhas" >
+          <td class="Position" >15</td>
+          <td>  <img src="" alt=""> Paraíba</td>
+          <td>3 766 528	</td>
+          <td>4 059 905	</td>
+          <td class="aumento">+7.79%	</td>
+          <td class="Pais-comparavel" >  <img src="" alt=""> Líbano (4 168 000)</td>
+        </tr>
+        <tr class="linhas" >
+          <td class="Position" >16</td>
+          <td>  <img src="" alt=""> Mato Grosso</td>
+          <td>3 035 122	</td>
+          <td>3 567 234	</td>
+          <td class="aumento">+17.53%	</td>
+          <td class="Pais-comparavel" >  <img src="" alt=""> Uruguai (3 415 866)</td>
+        </tr>
+        <tr class="linhas" >
+          <td class="Position" >17</td>
+          <td>  <img src="" alt=""> Rio Grande do Norte</td>
+          <td>3 168 027	</td>
+          <td>3 560 903	</td>
+          <td class="aumento">+12.40%	</td>
+          <td class="Pais-comparavel" >  <img src="" alt=""> Uruguai (3 415 866)</td>
+        </tr>
+        <tr class="linhas" >
+          <td class="Position" >18</td>
+          <td>	  <img src="" alt=""> Alagoas</td>
+          <td>3 120 494	</td>
+          <td>3 365 351	</td>
+          <td class="aumento">+7.85%	</td>
+          <td class="Pais-comparavel" >  <img src="" alt=""> Uruguai (3 415 866)</td>
+        </tr>
+        <tr class="linhas" >
+          <td class="Position" >19</td>
+          <td> Piauí</td>
+          <td>3 118 360	</td>
+          <td>3 289 290	</td>
+          <td class="aumento">+5.48%	</td>
+          <td class="Pais-comparavel" >  <img src="" alt=""> Kuwait (3 268 431)</td>
+        </tr>
+        <tr class="linhas" >
+          <td class="Position" >20</td>
+          <td>	 <img src="" alt="">  Distrito Federal</td>
+          <td>2 570 160	</td>
+          <td>3 094 325	</td>
+          <td class="aumento">+20.39%	</td>
+          <td class="Pais-comparavel" > <img src="" alt=""> Lituânia (2 900 787)</td>
+        </tr>
+        <tr class="linhas" >
+          <td class="Position" >21</td>
+          <td>  <img src="" alt=""> Mato Grosso do Sul</td>
+          <td>2 449 024	</td>
+          <td>2 839 188	</td>
+          <td class="aumento">+15.93%	</td>
+          <td class="Pais-comparavel" >  <img src="" alt=""> Jamaica (2 717 991)</td>
+        </tr>
+        <tr class="linhas" >
+          <td class="Position" >22</td>
+          <td>	  <img src="" alt=""> Sergipe</td>
+          <td>2 068 017	</td>
+          <td>2 338 474	</td>
+          <td class="aumento">+13.07%	</td>
+          <td class="Pais-comparavel" >	  <img src="" alt=""> Namíbia (2 280 700)</td>
+        </tr>
+        <tr class="linhas" >
+          <td class="Position" >23</td>
+          <td>	  <img src="" alt=""> Rondônia</td>
+          <td>1 562 409	</td>
+          <td>1 815 278	</td>
+          <td class="aumento">+16.18%	</td>
+          <td class="Pais-comparavel" >	  <img src="" alt=""> Gabão (1 725 000)</td>
+        </tr>
+        <tr class="linhas" >
+          <td class="Position" >24</td>
+          <td>	  <img src="" alt=""> Tocantins</td>
+          <td>1 383 445	</td>
+          <td>1 607 363	</td>
+          <td class="aumento">+16.18%	</td>
+          <td class="Pais-comparavel" >  <img src="" alt=""> Bahrein (1 359 800)</td>
+        </tr>
+        <tr class="linhas" >
+          <td class="Position" >25</td>
+          <td>  <img src="" alt=""> Acre</td>
+          <td>733 559	</td>
+          <td>906 876	</td>
+          <td class="aumento">+23.63%	</td>
+          <td class="Pais-comparavel" >  <img src="" alt=""> Fiji (859 178)</td>
+        </tr>
+        <tr class="linhas" >
+          <td class="Position" >26</td>
+          <td>  <img src="" alt=""> Amapá</td>
+          <td>669 526	</td>
+          <td>	877 613</td>
+          <td class="aumento">+31.08%	</td>
+          <td class="Pais-comparavel" >  <img src="" alt=""> Fiji (859 178)</td>
+        </tr>
+        <tr class="linhas" >
+          <td class="Position" >27</td>
+          <td> <img src="" alt=""> Roraima</td>
+          <td>450 479	</td>
+          <td>652 713	</td>
+          <td class="aumento">+44.89%	</td>
+          <td class="Pais-comparavel" > <img src="" alt=""> Luxemburgo (562 958)</td>
+      </tr>
       </tbody>
     </table>
   </body>

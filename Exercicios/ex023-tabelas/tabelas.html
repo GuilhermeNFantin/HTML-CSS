@@ -10,7 +10,11 @@
         width: 400px;
         height: 200px;
         border-collapse: collapse;
-        border: 5px solid red;
+      }
+
+      .container {
+        position: absolute;
+        left: 200px;
       }
 
       tr.linha {
@@ -42,31 +46,33 @@
                 TABLE DATA = DADO DE TABELA
 
     -->
-    <table>
-      <tr>
-        <!--PRIMEIRA LINHA-->
-        <td>A1</td>
-        <td>B1</td>
-        <td>C1</td>
-      </tr>
-      <tr>
-        <!--SEGUNDA LINHA-->
-        <td>A2</td>
-        <td>B2</td>
-        <td class="numero">C2</td>
-      </tr>
-      <tr>
-        <!--TERCEIRA LINHA LINHA-->
-        <td>A3</td>
-        <td>B3</td>
-        <td class="numero">C3</td>
-      </tr>
-      <tr>
-        <!--QUARTA LINHA-->
-        <td>A4</td>
-        <td>B4</td>
-        <td>C4</td>
-      </tr>
-    </table>
+    <div class="container">
+      <table>
+        <tr>
+          <!--PRIMEIRA LINHA-->
+          <td>A1</td>
+          <td>B1</td>
+          <td>C1</td>
+        </tr>
+        <tr>
+          <!--SEGUNDA LINHA-->
+          <td>A2</td>
+          <td>B2</td>
+          <td class="numero">C2</td>
+        </tr>
+        <tr>
+          <!--TERCEIRA LINHA LINHA-->
+          <td>A3</td>
+          <td>B3</td>
+          <td class="numero">C3</td>
+        </tr>
+        <tr>
+          <!--QUARTA LINHA-->
+          <td>A4</td>
+          <td>B4</td>
+          <td>C4</td>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>
