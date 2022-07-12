@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas grandes</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Segoe UI Light", "Segoe UI", "Segoe UI",
+          "Segoe UI";
+      }
+
+      h1 {
+        text-align: left;
+      }
+
+      table {
+        border-collapse: collapse;
+        position: relative;
+        background-color: #5e5e5e93;
+      }
+
+      th {
+        border: 2px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 0px 10px 0px 10px;
+      }
+
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        border-spacing: 0px;
+        text-align: center;
+      }
+
+      .aumento {
+        color: #0cec0c;
+      }
+
+      .Pais-comparavel {
+        padding: 0px 10px 0px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Estados mais populosos do Brasil</h1>
+    <!-- ANATOMIA DE TABELAS GRANDES
+        TABLE 
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+      <thead>
+        <tr class="="linhas">
+          <th>Posição</th>
+          <th>Unidade federativa</th>
+          <th>População (2010)</th>
+          <th>População (2021)</th>
+          <th>Crescimento</th>
+          <th>País comparável (População)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="linhas">
+          <td>1</td>
+          <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/22px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt="bandeira de são paulo"> São Paulo</td>
+          <td>45 919049</td>
+          <td>46 649 132</td>
+          <td class="aumento">+13.05%</td>
+          <td class="Pais-comparavel" > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/22px-Flag_of_Spain.svg.png" alt="Bandeira da Espanha"> Espanha (46 439 864)</td>
+        </tr>
+        <tr class="linhas">
+          <td>2</td>
+          <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bandeira_de_Minas_Gerais.svg/20px-Bandeira_de_Minas_Gerais.svg.png" alt="bandeira de Minas Gerais"> Minas Gerais</td>
+          <td>19 597 330</td>
+          <td>21 411 923</td>
+          <td class="aumento">+9.26%</td>
+          <td class="Pais-comparavel" > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Sri_Lanka.svg/22px-Flag_of_Sri_Lanka.svg.png" alt="Bandeira do Sri Lanka"> Sri Lanka (20 675 000)</td>
+        </tr>
+        <tr class="linhas">
+          <td>3</td>
+          <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg/20px-Bandeira_do_estado_do_Rio_de_Janeiro.svg.png" alt="bandeira do Rio de Janeiro"> Rio de Janeiro</td>
+          <td>15 989 929</td>
+          <td>17 463 349</td>
+          <td class="aumento">+9.21%</td>
+          <td class="Pais-comparavel" > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Flag_of_the_United_Arab_Republic_%281958%E2%80%931971%29.svg/22px-Flag_of_the_United_Arab_Republic_%281958%E2%80%931971%29.svg.png" alt="Bandeira da Síria"> Síria (17,500,658)</td>
+        </tr>
+        <tr class="linhas">
+          <td>4</td>
+          <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bandeira_da_Bahia.svg/20px-Bandeira_da_Bahia.svg.png" alt="bandeira da Bahia"> Bahia</td>
+          <td>14 016 906</td>
+          <td>14 985 284</td>
+          <td class="aumento">+6.91%</td>
+          <td class="Pais-comparavel" > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Flag_of_Chad.svg/22px-Flag_of_Chad.svg.png" alt="Bandeira de Chade"> Chade (14 037 000)</td>
+        </tr>
+        <tr class="linhas">
+          <td>5</td>
+          <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Bandeira_do_Paran%C3%A1.svg/20px-Bandeira_do_Paran%C3%A1.svg.png" alt="Bandeira do Paraná"> Paraná</td>
+          <td>10 444 526</td>
+          <td>11 597 484</td>
+          <td class="aumento">+11.04%</td>
+          <td class="Pais-comparavel" > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Bandera_de_Bolivia_%28Estado%29.svg/22px-Bandera_de_Bolivia_%28Estado%29.svg.png" alt="Bandeira da Bolívia"> Bolívia (11 410 651)</td>
+        </tr>
+        <tr class="linhas">
+          <td>6</td>
+          <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Bandeira_do_Rio_Grande_do_Sul.svg/20px-Bandeira_do_Rio_Grande_do_Sul.svg.png" alt="Bandeira do Rio Grande do Sul"> Rio Grande do Sul</td>
+          <td>10 693 929</td>
+          <td>11 466 630</td>
+          <td class="aumento">+7.23%</td>
+          <td class="Pais-comparavel" > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_Belgium_%28civil%29.svg/22px-Flag_of_Belgium_%28civil%29.svg.png" alt="Bandeira da Bélgica"> Bélgica (11 250 659)</td>
+        </tr>
+        <tr class="linhas">
+          <td>7</td>
+          <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Bandeira_de_Pernambuco.svg/20px-Bandeira_de_Pernambuco.svg.png" alt="Bandeira de Pernambuco"> Pernambuco</td>
+          <td>8 796 448</td>
+          <td>9 674 793</td>
+          <td class="aumento">+9.98%</td>
+          <td class="Pais-comparavel" > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Flag_of_Belarus.svg/22px-Flag_of_Belarus.svg.png" alt="Bandeira da Bielorrússia"> Bielorrússia (9 485 300)</td>
+        </tr>
+        <tr class="linhas">
+          <td>8</td>
+          <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bandeira_do_Cear%C3%A1.svg/20px-Bandeira_do_Cear%C3%A1.svg.png" alt="Bandeira do Cerará"> Ceará</td>
+          <td>8 452 381</td>
+          <td>9 240 580</td>
+          <td class="aumento">+9.32%</td>
+          <td class="Pais-comparavel" > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_United_Arab_Emirates.svg/22px-Flag_of_the_United_Arab_Emirates.svg.png" alt="Bandeiras dos Emirados Árabes"> Emirados Árabes Unidos (9 157 000)</td>
+        </tr>
+        <tr class="linhas">
+          <td>9</td>
+          <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bandeira_do_Par%C3%A1.svg/20px-Bandeira_do_Par%C3%A1.svg.png" alt="Bandeira do Pará"> Pará</td>
+          <td>7 581 051</td>
+          <td>8 777 124</td>
+          <td class="aumento">+15.78%</td>
+          <td class="Pais-comparavel" > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Austria.svg/22px-Flag_of_Austria.svg.png" alt="Bandeira da Áustria"> Áustria (8 602 112)</td>
+        </tr>
+        <tr class="linhas">
+          <td>10</td>
+          <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bandeira_de_Santa_Catarina.svg/20px-Bandeira_de_Santa_Catarina.svg.png" alt="Bandeira de Santa Catarina"> Santa Catarina</td>
+          <td>6 248 436</td>
+          <td>7 338 473</td>
+          <td class="aumento">+17.44%</td>
+          <td class="Pais-comparavel" > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Flag_of_Serbia.svg/22px-Flag_of_Serbia.svg.png" alt="Bandeira da Sérvia"> Sérvia (7 114 393)</td>
+        </tr>
+      </tbody>
+      <tfoot></tfoot>
+    </table>
+  </body>
+</html>
