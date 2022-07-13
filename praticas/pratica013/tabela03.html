@@ -25,6 +25,7 @@
     }
 
     .Categoria {
+        background-color: #ffffff;
         font-weight: bold;
         color: #000000;
     }
@@ -39,19 +40,19 @@
   <body>
     <table>
       <tr>
-        <th rowspan="2">Área</th>
-        <th rowspan="2">Disciplinas</th>
-        <th colspan="2">Notas</th>
-        <th rowspan="2">Média</th>
+        <th rowspan="2" scope="col">Área</th>
+        <th rowspan="2" scope="col">Disciplinas</th>
+        <th colspan="2" scope="colgroup">Notas</th>
+        <th rowspan="2" scope="col">Média</th>
       </tr>
       <tr>
-        <th>Nota 1</th>
-        <th>Nota 2</th>
+        <th scope="col">Nota 1</th>
+        <th scope="col">Nota 2</th>
       </tr>
     </thead>
       <tbody>
         <tr>
-            <td rowspan="5" class="Categoria">Exatas</td>
+            <th rowspan="5" class="Categoria" scope="rowgroup">Exatas</th>
         </tr>
         <tr>
             <td>Matemática</td>
@@ -78,11 +79,11 @@
             <td>9.5</td>
         </tr>
         <tr>
-            <td colspan="4" class="Rcb-m">Média de Exatas</td>
+            <th colspan="4" class="Rcb-m" scope="row">Média de Exatas</th>
             <td class="Médias">8.25</td>
         </tr>
         <tr>
-            <td rowspan="2" class="Categoria">Humanas</td>
+            <th rowspan="2" class="Categoria" scope="rowgroup">Humanas</th>
             <td>História</td>
             <td class="Notas">7.5</td>
             <td class="Notas">9.5</td>
@@ -95,7 +96,7 @@
             <td>7</td>
         </tr>
         <tr>
-            <td colspan="4"  class="Rcb-m">Média de Humanas</td>
+            <th colspan="4"  class="Rcb-m" scope="row">Média de Humanas</th>
             <td class="Médias">7.75</td>
         </tr>
       </tbody>
