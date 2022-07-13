@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas responsivas</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      tbody > tr:nth-child(odd) {
+        background-color: #79797985;
+      }
+
+      th,
+      td {
+        text-align: center;
+        font-weight: bold;
+        border: 2px solid #000000;
+        padding: 8px;
+      }
+      .container {
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab unde dolor
+      sunt molestiae, sapiente, placeat quo eligendi velit, laborum mollitia
+      earum omnis! Voluptatum atque accusantium odit porro aperiam similique
+      hic?
+    </p>
+    <div class="container">
+      <table>
+        <caption>
+          Tabelas responsivas
+        </caption>
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>JAN</th>
+            <th>FEV</th>
+            <th>MAR</th>
+            <th>ABR</th>
+            <th>MAI</th>
+            <th>JUN</th>
+            <th>JUL</th>
+            <th>AGO</th>
+            <th>SET</th>
+            <th>OUT</th>
+            <th>NOV</th>
+            <th>DEZ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Pães</th>
+            <td>5</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>1</td>
+            <td>12</td>
+            <td>34</td>
+            <td>21</td>
+            <td>44</td>
+            <td>21</td>
+            <td>11</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th>Biscoitos</th>
+            <td>8</td>
+            <td>12</td>
+            <td>11</td>
+            <td>10</td>
+            <td>22</td>
+            <td>14</td>
+            <td>51</td>
+            <td>23</td>
+            <td>12</td>
+            <td>5</td>
+            <td>14</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <th>Balas</th>
+            <td>8</td>
+            <td>7</td>
+            <td>8</td>
+            <td>11</td>
+            <td>16</td>
+            <td>21</td>
+            <td>11</td>
+            <td>31</td>
+            <td>51</td>
+            <td>34</td>
+            <td>22</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <th>Livros</th>
+            <td>3</td>
+            <td>6</td>
+            <td>7</td>
+            <td>9</td>
+            <td>2</td>
+            <td>11</td>
+            <td>4</td>
+            <td>5</td>
+            <td>7</td>
+            <td>1</td>
+            <td>11</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <th>Canetas</th>
+            <td>11</td>
+            <td>25</td>
+            <td>51</td>
+            <td>13</td>
+            <td>19</td>
+            <td>25</td>
+            <td>29</td>
+            <td>34</td>
+            <td>33</td>
+            <td>39</td>
+            <td>54</td>
+            <td>29</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
