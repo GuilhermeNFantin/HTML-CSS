@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border: 2px solid black;
+        text-align: center;
+        padding: 8px;
+      }
+
+      .Cnome {
+        background-color: #ff0000;
+      }
+
+      .Cgrupo {
+        background-color: #ffff00;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <!-- Utilzado col para facilitar estilização de colunas -->
+      <colgroup>
+        <col class="Cnome" />
+        <!-- Utilizado span para que o style de Cgrupo seja expandido para 2 colunas, dessa maneira não é necessario colocar 4 col -->
+        <col class="Cgrupo" span="2" />
+        <col class="Cprofissão" />
+      </colgroup>
+      <!-- caption é o titulo da table -->
+      <caption>
+        Cadastro
+      </caption>
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">Idade</th>
+        <th scope="col">Profissão</th>
+      </tr>
+      <tr>
+        <td>Ana Maria</td>
+        <td>F</td>
+        <td>25</td>
+        <td>Jornalista</td>
+      </tr>
+      <tr>
+        <td>Douglas</td>
+        <td>M</td>
+        <td>20</td>
+        <td>Estudante</td>
+      </tr>
+      <tr>
+        <td>Bruno</td>
+        <td>M</td>
+        <td>23</td>
+        <td>Engenheiro</td>
+      </tr>
+      <tr>
+        <td>Guilherme</td>
+        <td>M</td>
+        <td>23</td>
+        <td>Desenvolvedor</td>
+      </tr>
+      <tr>
+        <td>Lívia</td>
+        <td>F</td>
+        <td>21</td>
+        <td>Tradutora</td>
+      </tr>
+      <tr>
+        <td>Adriano</td>
+        <td>M</td>
+        <td>30</td>
+        <td>Caminhoneiro</td>
+      </tr>
+    </table>
+  </body>
+</html>
