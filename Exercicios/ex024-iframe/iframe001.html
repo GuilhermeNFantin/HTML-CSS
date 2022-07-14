@@ -5,12 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aprendendo iframe</title>
+    <style>
+      /* as css são soberanas em estilização do iframe, 
+      mesmo que tenha colocado configurações dentro da tag em si */
+      iframe {
+        height: 800px;
+        width: 400px;
+      }
+    </style>
   </head>
   <body>
     <h1>Testando o uso do iframe</h1>
     <p>
       Acessando o site do
-      <iframe src="https://cursoemvideo.com" frameborder="0">
+      <!-- tamanho padrão do iframe é 300px x 150px -->
+      <iframe
+        src="https://cursoemvideo.com"
+        frameborder="0"
+        height="300"
+        widt="600"
+        <!--
+        O
+        parametro
+        scrolling
+        permite
+        ou
+        nao
+        a
+        rolagem
+        lateral
+        em
+        iframes
+        --
+      >
+        scrolling="no" >
         <a href="https://cursoemvideo.com" target="_blank"></a>
       </iframe>
 
